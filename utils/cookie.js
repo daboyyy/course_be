@@ -17,7 +17,7 @@ const setAccessTokenInCookie = (res, accessToken) => {
     sameSite: "strict",
     secure: true,
     maxAge: 10 * 60 * 1000,
-    domain: ".vercel.app",
+    domain: "course-fe-five.vercel.app",
   });
 };
 

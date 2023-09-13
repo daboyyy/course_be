@@ -1,12 +1,13 @@
 const cors = require("cors");
 const express = require("express");
 const cookieParser = require("cookie-parser");
+require("dotenv").config();
 
 // Internal
 const { verifyAccessToken } = require("./middleware/verifyAccessToken");
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: process.env.ALLOW_CORS_ORIGIN,
   credentials: true,
 };
 

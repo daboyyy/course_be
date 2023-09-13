@@ -11,9 +11,6 @@ out/
 config/dev.env
 config/production.env
 
-package-lock.json
-yarn.lock
-
 .env
 
 .vscode/

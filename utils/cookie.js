@@ -15,8 +15,9 @@ const setAccessTokenInCookie = (res, accessToken) => {
   res.cookie("accessToken", accessToken, {
     httpOnly: true,
     sameSite: "strict",
-    secure: false,
+    secure: true,
     maxAge: 10 * 60 * 1000,
+    domain: ".vercel.app",
   });
 };
 

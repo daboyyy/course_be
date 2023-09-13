@@ -16,6 +16,9 @@ app.use(cors(corsOptions));
 app.use(cookieParser());
 
 // Routes
+app.use("/health", (req, res) => {
+  res.status(200).json({ message: "Sucess" });
+});
 app.use("/auth", require("./routes/auth"));
 app.use("/customerInfo", verifyAccessToken, require("./routes/customerInfo"));
 app.use("/course", verifyAccessToken, require("./routes/course"));

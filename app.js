@@ -19,3 +19,5 @@ app.use(cookieParser());
 app.use("/auth", require("./routes/auth"));
 app.use("/customerInfo", verifyAccessToken, require("./routes/customerInfo"));
 app.use("/course", verifyAccessToken, require("./routes/course"));
+
+module.exports = app;

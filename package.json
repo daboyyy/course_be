@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
+    "start": "node index.js",
     "migrate-down": "npx sequelize-cli db:migrate:undo",
     "migrate-up": "npx sequelize-cli db:migrate",
     "gen-seed": "npx sequelize-cli db:seed:all",
